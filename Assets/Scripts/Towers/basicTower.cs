@@ -45,6 +45,10 @@ public class basicTower : MonoBehaviour {
         {
             canAttack = true;                                                                                               // Update boolean saying we have passed the time requirement between attacks
         }
+        else                                                                                                            // Otherwise we can't attack
+        {
+            canAttack = false;                                                                                              // Update boolean saying we cannot attack
+        }
 
 
         if (target != null && canAttack)                                                                                // Check if we have a target AND cooldown has ended

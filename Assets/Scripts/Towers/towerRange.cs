@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class towerRange : MonoBehaviour {
 
-    [HideInInspector]
+    //[HideInInspector]
     public GameObject target;
 
     ///////////////////////////////////////////////////////////////////////////
@@ -28,7 +28,7 @@ public class towerRange : MonoBehaviour {
     //Method called when any object leaves the trigger on this object
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == target)
+        if (other.CompareTag("mob"))
         {
             target = null;
         }
