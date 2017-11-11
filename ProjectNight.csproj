@@ -90,6 +90,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\roundManager.cs" />
     <Compile Include="Assets\Scripts\Grid Systems\alignmentLock.cs" />
     <Compile Include="Assets\Scripts\Grid Systems\objectClickSelection.cs" />
     <Compile Include="Assets\Scripts\Mobs\baseUnitAI.cs" />
@@ -103,6 +104,7 @@
     <Compile Include="Assets\Scripts\Towers\basicTower.cs" />
     <Compile Include="Assets\Scripts\Towers\missileCommand.cs" />
     <Compile Include="Assets\Scripts\Towers\towerRange.cs" />
+    <Compile Include="Assets\spawner.cs" />
     <Compile Include="Assets\unitHealth.cs" />
     <Compile Include="Assets\Welcome To Project Nightmare.cs" />
   </ItemGroup>
