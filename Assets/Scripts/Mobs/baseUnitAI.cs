@@ -16,9 +16,11 @@ public class baseUnitAI : MonoBehaviour {
 	void Start () {
         mainBed = GameObject.Find("mainBed");                                                                   // Find the main bed reference for the unit when spawned 
         nav = GetComponent<NavMeshAgent>();                                                                     // Sets component reference for the nav agent 
-        nav.SetDestination(mainBed.transform.position);                                                         // Starts the units destination at the bed 
+        nav.SetDestination(mainBed.transform.position);
 
         counter = 0;                                                                                            //Starts counter off at 0 - prevents possible bugs
+
+        gameObject.SetActive(true);
 
         if (mainBed == null) { Debug.LogError("DEVELOPER ERROR - Object Reference - Main bed for scene not set"); }
 	}
