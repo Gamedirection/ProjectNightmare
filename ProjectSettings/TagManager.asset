@@ -7,6 +7,7 @@ TagManager:
   - OverlapDetector
   - tower
   - mob
+  - bed
   layers:
   - Default
   - TransparentFX

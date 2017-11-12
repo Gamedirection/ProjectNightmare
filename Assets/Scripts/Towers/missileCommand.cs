@@ -17,6 +17,16 @@ public class missileCommand : MonoBehaviour {
 	}
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Method called every frame after each Update method call
+    private void LateUpdate()
+    {
+        if (target == null)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //Method called when a collider enter the trigger
     private void OnTriggerEnter(Collider other)
     {

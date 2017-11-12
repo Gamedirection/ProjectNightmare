@@ -40,6 +40,7 @@ public class basicTower : MonoBehaviour {
         if (updateTracker <= 0)                                                                                         // Check cooldown ending for if we should check attackRange object
         {
             target = attackTrigger.GetComponent<towerRange>().target;                                                       // Save the target object in a local variable
+            updateTracker = updateSpeed;
         }
         if (attackRateTracker <= 0)                                                                                     // Check cooldown ending for if attack rate reset
         {
