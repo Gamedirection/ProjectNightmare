@@ -36,7 +36,6 @@ public class roundManager : MonoBehaviour {
     ////////////////////////////////////////////////////////////////////////////////////////////
     //Method called every frame
     void Update () {
-        Debug.Log(mobsAlive);
         //Decriment time if timer is above 0
 		if (roundTime >= 0)                                                                 // Check if round timer is above 0
         {

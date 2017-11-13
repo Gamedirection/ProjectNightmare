@@ -8,6 +8,7 @@ TagManager:
   - tower
   - mob
   - bed
+  - wall
   layers:
   - Default
   - TransparentFX

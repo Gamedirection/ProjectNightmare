@@ -107,6 +107,7 @@
     <Compile Include="Assets\Scripts\Towers\basicTower.cs" />
     <Compile Include="Assets\Scripts\Towers\missileCommand.cs" />
     <Compile Include="Assets\Scripts\Towers\towerRange.cs" />
+    <Compile Include="Assets\wallManager.cs" />
     <Compile Include="Assets\Welcome To Project Nightmare.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

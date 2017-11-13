@@ -475,6 +475,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1616023017065546, guid: 9328215065c6d99429f62ff4ffac552f, type: 2}
+      propertyPath: m_TagString
+      value: wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9328215065c6d99429f62ff4ffac552f, type: 2}
   m_IsPrefabParent: 0
@@ -633,6 +637,18 @@ GameObject:
   m_PrefabParentObject: {fileID: 1985876317740896, guid: 74c636051bad353469ba26fc16728f9d,
     type: 2}
   m_PrefabInternal: {fileID: 185987439}
+--- !u!114 &1962787005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962787004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f313a053c360445ad768df73f3e3a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundActive: 0
 --- !u!114 &1962787007
 MonoBehaviour:
   m_ObjectHideFlags: 0
