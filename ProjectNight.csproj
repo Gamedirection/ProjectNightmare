@@ -90,6 +90,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\movementTracker.cs" />
     <Compile Include="Assets\Scripts\Grid Systems\alignmentLock.cs" />
     <Compile Include="Assets\Scripts\Grid Systems\objectClickSelection.cs" />
     <Compile Include="Assets\Scripts\Managers\roundManager.cs" />
