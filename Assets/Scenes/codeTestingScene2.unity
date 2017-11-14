@@ -219,6 +219,11 @@ Prefab:
     - target: {fileID: 114979149232362078, guid: 74c636051bad353469ba26fc16728f9d,
         type: 2}
       propertyPath: userAlive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114979149232362078, guid: 74c636051bad353469ba26fc16728f9d,
+        type: 2}
+      propertyPath: useTimer
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -320,7 +325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &326361466
 Transform:
   m_ObjectHideFlags: 0
@@ -673,7 +678,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4815841866410010, guid: 60e43733a66624a4582ae6e3a0a474ab, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -23.9
+      value: -9.23
       objectReference: {fileID: 0}
     - target: {fileID: 4815841866410010, guid: 60e43733a66624a4582ae6e3a0a474ab, type: 2}
       propertyPath: m_LocalPosition.y
@@ -681,7 +686,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4815841866410010, guid: 60e43733a66624a4582ae6e3a0a474ab, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 9.3
+      value: -2.95
       objectReference: {fileID: 0}
     - target: {fileID: 4815841866410010, guid: 60e43733a66624a4582ae6e3a0a474ab, type: 2}
       propertyPath: m_LocalRotation.x
