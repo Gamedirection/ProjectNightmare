@@ -6,7 +6,9 @@ public class unitHealth : MonoBehaviour {
 
     public float maxHealth;         // Maximum health = set by developer
 
-    public float currentHealth;    // Current health the unit has
+    public float currentHealth;     // Current health the unit has
+
+    public bool isBed;              // Is the object a bed
 
     [HideInInspector]
     public float damageTaken;       // Damage to be applied this frame
@@ -27,10 +29,14 @@ public class unitHealth : MonoBehaviour {
             damageTaken = 0;                                                                    // Reset damage taken to 0
         }
 
-        if (currentHealth <= 0)                                                             // Check we we have no health
+        if (currentHealth <= 0 && !isBed)                                                  // Check we we have no health AND we are not a bed
         {
-            GameObject.Find("GAMEMANAGER").GetComponent<roundManager>().mobsAlive--;            // Remove this mob from the active counter
             Destroy(this.gameObject);                                                           // Kill the mob
+        } 
+        else
+        {
+            Time.timeScale = 0;
+            GameObject.Find("GAMEMANAGER").GetComponent<roundManager>().loseGameOver.SetActive(true);
         }
     }
 }

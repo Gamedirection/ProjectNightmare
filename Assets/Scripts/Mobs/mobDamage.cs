@@ -20,7 +20,6 @@ public class mobDamage : MonoBehaviour {
         if (collision.gameObject.tag == "bed")                                                                                  // Check if the other collider is a bed
         {
             collision.gameObject.GetComponent<unitHealth>().damageTaken += attackDamage;                                            // Apply damage to bed unitHealth component
-            GameObject.Find("GAMEMANAGER").GetComponent<roundManager>().mobsAlive--;                                                // Remove this mob from the active counter
             Destroy(this.gameObject);                                                                                               // Destory this object
         }
     }
