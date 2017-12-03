@@ -33,7 +33,7 @@ public class unitHealth : MonoBehaviour {
         {
             Destroy(this.gameObject);                                                           // Kill the mob
         } 
-        else
+        if (currentHealth <= 0 && isBed)
         {
             Time.timeScale = 0;
             GameObject.Find("GAMEMANAGER").GetComponent<roundManager>().loseGameOver.SetActive(true);

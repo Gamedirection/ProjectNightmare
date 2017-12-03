@@ -20,6 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4894498780352756}
   - component: {fileID: 114979149232362078}
+  - component: {fileID: 114214339414416302}
+  - component: {fileID: 114633197830214550}
   m_Layer: 0
   m_Name: GAMEMANAGER
   m_TagString: Untagged
@@ -40,6 +42,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114214339414416302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1985876317740896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f313a053c360445ad768df73f3e3a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roundActive: 0
+  maxMoves: 3
+--- !u!114 &114633197830214550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1985876317740896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e70b0f19348e07439efb4d953ff82cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxArraySize: 500
+  spawnedMobs: []
+  index: 0
 --- !u!114 &114979149232362078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51,11 +80,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb9c0be0cfb6d7d4384e6e3267b1f1a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundTime: 0
-  mobsAlive: 0
-  useTimer: 0
-  userAlive: 0
-  spawners:
-  - {fileID: 0}
+  roundTime: 5
+  numberOfRounds: 2
+  winGameOver: {fileID: 0}
+  loseGameOver: {fileID: 0}
+  startRoundButton: {fileID: 0}
+  daylight: {fileID: 0}
+  nightLight: 0.5
+  nextMap: MainMenu
+  spawnersParent:
   - {fileID: 0}
   - {fileID: 0}
