@@ -13,16 +13,20 @@ public class wallManager : MonoBehaviour {
 
     [Header("Wall Options")]
     public int maxMoves;                    // Maximum number of times the wall can move in one round
-    private bool canMoveLeft;               //
-    private bool canMoveRight;
-    private bool canMoveUp;
-    private bool canMoveDown;
+    private bool canMoveLeft;               // Determines if the object can move left
+    private bool canMoveRight;              // Determines if the object can move right 
+    private bool canMoveUp;                 // Determines if the object can move up
+    private bool canMoveDown;               // Determines if the object can move down
+
+    [Space(5)]
+    public GameObject selectionCanvas;      // Object reference for canvas element that informs when an object is selected
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //Method called at the start of the scene
     void Start () {
         //Error logging
 		if (maxMoves < 1) { Debug.LogError("DEVELOPER ERROR - Bad Variable - Max moves not set to a valid number on " + gameObject.name); }
+        if (selectionCanvas == null) { Debug.LogError("DEVELOPER ERROR - Null Reference - No Canvas element selected for wall selector"); }
 	}
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -88,6 +92,7 @@ public class wallManager : MonoBehaviour {
                     selectedWall = hit.collider.gameObject;
                     verticalMoveCount = selectedWall.GetComponent<movementTracker>().verticalCount;
                     horizontalMoveCount = selectedWall.GetComponent<movementTracker>().horizontalCount;
+                    selectionCanvas.SetActive(true);
                 }
             }
         }
@@ -102,6 +107,7 @@ public class wallManager : MonoBehaviour {
             selectedWall.GetComponent<movementTracker>().verticalCount = verticalMoveCount;                                                             // Update the number of times the wall has moved vertically
             selectedWall.GetComponent<movementTracker>().horizontalCount = horizontalMoveCount;                                                         // Update the number of times the wall has moved horizontally
             selectedWall = null;                                                                                                                        // Remove the object reference for the wall
+            selectionCanvas.SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.A) && selectedWall != null && canMoveLeft) {                                                                   // If the player presses A AND the wall is not null AND they can still move the wall
