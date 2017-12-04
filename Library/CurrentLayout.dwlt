@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 362, y: 632}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 190
+  controlID: 186
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,8 +214,8 @@ MonoBehaviour:
     y: 711
     width: 1426
     height: 596
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 28}
   m_Panes:
   - {fileID: 28}
@@ -264,8 +264,8 @@ MonoBehaviour:
     y: 0
     width: 468
     height: 804
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 279, y: 71}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 25}
   m_Panes:
   - {fileID: 25}
@@ -404,8 +404,8 @@ MonoBehaviour:
     y: 0
     width: 1426
     height: 711
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 27}
   m_Panes:
   - {fileID: 27}
@@ -613,18 +613,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Scripts/Managers
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Scripts/Managers
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Liam\Documents\Unity Projects\ProjectNight
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 82260000
-    m_LastClickedID: 9858
+    m_SelectedIDs: 9c2b0000
+    m_LastClickedID: 11164
     m_ExpandedIDs: 0000000082260000ee2a0000be2b0000ec2c0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -769,9 +769,9 @@ MonoBehaviour:
     height: 689
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c6e4ffff
-    m_LastClickedID: -6970
-    m_ExpandedIDs: 18fcffff00000000862e0000
+    m_SelectedIDs: f6fbffff
+    m_LastClickedID: -1034
+    m_ExpandedIDs: 18fcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -853,7 +853,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.24964215, y: -0.0037811378, z: 0.0009745933, w: -0.96833026}
     speed: 2
-    m_Value: {x: -0.24964216, y: -0.003781138, z: 0.00097459333, w: -0.9683303}
+    m_Value: {x: -0.24964213, y: -0.0037811375, z: 0.0009745933, w: -0.9683302}
   m_Size:
     m_Target: 2.8578837
     speed: 2
